@@ -27,8 +27,14 @@ dicionario = {1: 'a',
 
               }
 
+
 def high(x):
     return max(x.split(), key=lambda k: sum(ord(c) - 96 for c in k))
+
+j = lambda k: sum(ord(c) - 96 for c in k)
+
+
+print(j('man i need a taxi up to ubud'.split()))
 
 """
 def high(x):
